@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5 </title>
+</head>
+<body>
+    <h1> A diferença e</h1>
+    <div id="resultado"></div>
+    <script>
+        let numero1= Number(prompt("Digite o primeiro numero "))
+        let numero2= Number(prompt("Digite o segundo  numero "))
+        let valor= numero1-numero2
+        let resul;
+
+        if(numero1 > numero2){
+            valor= numero1-numero2
+            resul = " A diferençã e :" + valor
+        }else{
+            valor= numero2-numero1
+            resul = " A diferençã e :" + valor
+        }
+        document.getElementById("resultado").innerHTML = resul;
+    </script>
+</body>
+</html>

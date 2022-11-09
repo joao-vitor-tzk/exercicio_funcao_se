@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3 </title>
+</head>
+<body>
+    <h1>Quem e mais velho ?</h1>
+    <div id="resultado"></div>  
+    <script>
+        let nome1= prompt("Digite o nome da primeira pessoa ");
+        let ano1= Number(prompt("diagite o ano que a primira pessoa naceu"));
+        let nome2= prompt("nome da segunda pessoa ");
+        let ano2= Number(prompt ("Ano que a segunda pessoa naceu "));
+        let idade1 = (2022 - ano1);
+        let idade2= (2022 - ano2);
+        let resul;
+
+        if(idade1 > idade2){ 
+            resul=nome1 + " tem a idade de " + idade1 + " é mias velho que  " + nome2 +  " que tem a idade de " + idade2
+
+        }else{
+            resul=nome2 + " tem a idade de " + idade2 + " é mais velho que " + nome1 + " que tem a idade de " + idade1
+
+        }
+        document.getElementById("resultado").innerHTML = resul;
+    </script>
+    
+</body>
+</html>

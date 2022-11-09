@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividae 2</title>
+</head>
+<body>
+    <h1>Quen e mias obeso ?</h1>
+    <div id="resultado"></div>
+    <script>
+        let nome1= prompt("Digite o nome da primeira pessoa  ");
+        let ps1 = Number(prompt("Digite o peso da primeira pessoa  "));
+        let nome2= prompt("Digite o nome da segunda pessoa  ");
+        let ps2 = Number (prompt("Digite o peso da segunda pessoa  "));
+        let resul;
+         
+        if(ps1 > ps2){
+            resul = "A " + nome1 + " é mais obesa que " + nome2
+        }else{
+            resul = "A " + nome2 + " é mais obesa que " + nome1
+        }
+
+        document.getElementById("resultado").innerHTML = resul;
+
+
+    </script>
+</body>
+</html>
